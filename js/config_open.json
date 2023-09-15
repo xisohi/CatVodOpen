@@ -125,13 +125,6 @@
                 "api": "assets://js/kuqimv_bytecode.js"
             },
             {
-                "key": "if101_t1",
-                "name": "if101[T1][飞]",
-                "type": 3,
-                "api": "assets://js/caiji_okjack.js",
-                "ext": "https://haiwaikan.com/api.php/provide/vod/"
-            },
-            {
                 "key": "boosj",
                 "name": "童趣",
                 "type": 3,
