@@ -8,13 +8,13 @@
                 "api": "./duboku_bytecode.js"
             },
             {
-                "key": "mybili_唐三",
+                "key": "mybili_ts99999",
                 "name": "我的哔哩",
                 "type": 3,
                 "api": "./bili_bytecode3.js",
                 "ext": {
                     "categories": "经典无损音乐合集#帕梅拉#太极拳#健身#舞蹈#音乐#歌曲#MV4K#演唱会4K#白噪音4K#知名UP主#说案#解说#演讲#时事#探索发现超清#纪录片超清#平面设计教学#软件教程#实用教程#旅游#风景4K#食谱#美食超清#搞笑#球星#动物世界超清#相声小品#戏曲#儿童#小姐姐4K#热门#旅行探险",
-                    "cookie": "哔哩cookie"
+                    "cookie": "哔哩cookie 或 远端http链接"
                 }
             },
             {
@@ -23,7 +23,7 @@
                 "type": 3,
                 "api": "./bililive_bytecode.js",
                 "ext": {
-                    "cookie": "哔哩cookie"
+                    "cookie": "哔哩cookie 或 远端http链接"
                 }
             },
             {
@@ -40,7 +40,7 @@
                 "ext": "http://ytcms.lyyytv.cn/api.php/app/"
             },
             {
-                "key": "yqktv_游走",
+                "key": "yqktv_yozo",
                 "name": "一起看",
                 "type": 3,
                 "api": "./yqktv_bytecode.js"
@@ -50,6 +50,12 @@
                 "name": "南瓜影视",
                 "type": 3,
                 "api": "./ng_bytecode.js"
+            },
+            {
+                "key": "555dy_yozo",
+                "name": "555电影",
+                "type": 3,
+                "api": "./555dy_bytecode.js"
             },
             {
                 "key": "ikanbot",
@@ -162,7 +168,7 @@
                 "ext": "阿里token"
             },
             {
-                "key": "nivod_唐三",
+                "key": "nivod_ts99999",
                 "name": "泥巴[飞]",
                 "type": 3,
                 "api": "./nivod_op.js",
@@ -497,13 +503,13 @@
                 "ext": "https://sc1080.top/api.php/v1.vod"
             },
             {
-                "key": "18a_游走",
+                "key": "18a_yozo",
                 "name": "18AV",
                 "type": 3,
                 "api": "./18a_open.js"
             },
             {
-                "key": "mtsp_游走",
+                "key": "mtsp_yozo",
                 "name": "蜜桃",
                 "type": 3,
                 "api": "./mtsp_bytecode.js"
@@ -525,7 +531,7 @@
                 "api": "./bookan_open.js"
             },
             {
-                "key": "laobaigushi_游走",
+                "key": "laobaigushi_yozo",
                 "name": "老白故事",
                 "type": 10,
                 "api": "./lbgs_bytecode.js"
