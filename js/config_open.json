@@ -46,16 +46,34 @@
                 "api": "assets://js/yqktv_bytecode.js"
             },
             {
-                "key": "ng",
-                "name": "南瓜影视",
-                "type": 3,
-                "api": "assets://js/ng_bytecode.js"
-            },
-            {
                 "key": "555dy_yozo",
                 "name": "555电影",
                 "type": 3,
                 "api": "assets://js/555dy_bytecode.js"
+            },
+            {
+                "key": "yzys_yozo",
+                "name": "柚子影视",
+                "type": 3,
+                "api": "assets://js/yzys_bytecode.js"
+            },
+            {
+                "key": "yrzj_yozo",
+                "name": "*伊人追剧",
+                "type": 3,
+                "api": "assets://js/yrzj_bytecode.js"
+            },
+            {
+                "key": "zjdr_yozo",
+                "name": "*追剧达人(试用版)",
+                "type": 3,
+                "api": "assets://js/zjdr_bytecode.js"
+            },
+            {
+                "key": "ng",
+                "name": "南瓜影视",
+                "type": 3,
+                "api": "assets://js/ng_bytecode.js"
             },
             {
                 "key": "ikanbot",
@@ -122,7 +140,10 @@
                 "name": "明星MV[T1]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
-                "ext": "https://tvbox-mv--leosam2048.repl.co/mv/vod/"
+                "ext": {
+                    "url":"https://tvbox-mv--leosam2048.repl.co/mv/vod/",
+                    "categories":[]
+                }
             },
             {
                 "key": "kuqimv_bytecode",
@@ -181,39 +202,84 @@
                 "api": "assets://js/subaibai_bytecode.js"
             },
             {
-                "key": "if101_t1",
-                "name": "if101[T1][飞]",
+                "key": "haiwaikan_t1",
+                "name": "海外看[T1][飞]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
-                "ext": "https://haiwaikan.com/api.php/provide/vod/"
+                "ext": {
+                    "url":"https://haiwaikan.com/api.php/provide/vod/",
+                    "categories":["国产剧","韩剧","纪录片","港剧","欧美剧","日剧","泰剧","台剧","新马剧","其他剧","动画电影","国产动漫","日本动漫","港台动漫","欧美动漫","韩国动漫","新马泰动漫","其他动漫","体育","冒险片","剧情片","动作片","同性片","喜剧片","奇幻片","恐怖片","悬疑片","惊悚片","歌舞片","灾难片","爱情片","犯罪片","科幻片","经典片","网络电影","战争片","欧美综艺","日本综艺","韩国综艺","国产综艺","新马泰综艺","港台综艺","其他综艺"]
+                }
             },
             {
                 "key": "kuaikan_t1",
                 "name": "快看[T1]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
-                "ext": "https://kuaikan-api.com/api.php/provide/vod/"
+                "ext": {
+                    "url":"https://kuaikan-api.com/api.php/provide/vod/",
+                    "categories":["纪录片","冒险片","剧情片","动作片","动画电影","同性片","喜剧片","奇幻片","恐怖片","悬疑片","惊悚片","战争片","歌舞片","灾难片","爱情片","犯罪片","科幻片","经典片","网络电影","国产剧","欧美剧","日本剧","泰剧","港台剧","新马剧","其他剧","欧美综艺","日本综艺","韩国综艺","国产综艺","港台综艺","欧美动漫","日本动漫","国产动漫","港台动漫","韩国剧"]
+                }
             },
             {
                 "key": "lziapi_t1",
                 "name": "量子[T1]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
-                "ext": "https://cj.lziapi.com/api.php/provide/vod/"
+                "ext": {
+                    "url":"https://cj.lziapi.com/api.php/provide/vod/",
+                    "categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","电影解说","足球","篮球","网球","斯诺克","预告片","短剧"]
+                }
             },
             {
                 "key": "ffzyapi_t1",
                 "name": "非凡[T1]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
-                "ext": "https://cj.ffzyapi.com/api.php/provide/vod/"
+                "ext": {
+                    "url":"https://cj.ffzyapi.com/api.php/provide/vod/",
+                    "categories":["动漫片","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫"]
+                }
             },
             {
                 "key": "bfzyapi_t1",
                 "name": "暴风[T1]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
-                "ext": "https://bfzyapi.com/api.php/provide/vod/"
+                "ext": {
+                    "url":"https://bfzyapi.com/api.php/provide/vod/",
+                    "categories":["动作片","喜剧片","恐怖片","科幻片","爱情片","剧情片","战争片","纪录片","国产剧","欧美剧","香港剧","韩国剧","台湾剧","日本剧","海外剧","泰国剧","动漫片","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","大陆综艺","港台综艺","日韩综艺","欧美综艺","动画片"]
+                }
+            },
+            {
+                "key": "rise_t1",
+                "name": "飞马[T1]",
+                "type": 3,
+                "api": "assets://js/caiji_okjack.js",
+                "ext": {
+                    "url":"http://rise.eu.org/api.php/provide/vod/",
+                    "categories":[]
+                }
+            },
+            {
+                "key": "suoniapi_t1",
+                "name": "索尼[T1]",
+                "type": 3,
+                "api": "assets://js/caiji_okjack.js",
+                "ext": {
+                    "url":"https://suoniapi.com/api.php/provide/vod/from/snm3u8/",
+                    "categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","欧美剧","韩剧","日剧","港剧","台剧","海外剧","大陆综艺","国产动漫"]
+                }
+            },
+            {
+                "key": "kuaifan_t1",
+                "name": "快帆[T1]",
+                "type": 3,
+                "api": "assets://js/caiji_okjack.js",
+                "ext": {
+                    "url":"https://api.kuaifan.tv/api.php/provide/vod/",
+                    "categories":["动作片", "喜剧片", "爱情片", "科幻片", "恐怖片", "剧情片", "战争片", "惊悚片", "家庭片", "古装片", "历史片", "悬疑片", "犯罪片", "灾难片", "记录片", "短片", "动画片", "国产剧", "香港剧", "韩国剧", "欧美剧", "台湾剧", "日本剧", "海外剧", "泰国剧", "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺", "国产动漫", "欧美动漫", "日本动漫"]
+                }
             },
             {
                 "key": "shijie",
