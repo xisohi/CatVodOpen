@@ -52,16 +52,34 @@
                 "api": "./555dy_bytecode.js"
             },
             {
+                "key": "yrzj_yozo",
+                "name": "伊人追剧",
+                "type": 3,
+                "api": "./yrzj_bytecode.js"
+            },
+            {
+                "key": "bulei_star",
+                "name": "布蕾",
+                "type": 3,
+                "api": "./bulei_bytecode.js"
+            },
+            {
+                "key": "miku_yozo",
+                "name": "咪酷视频",
+                "type": 3,
+                "api": "./miku_bytecode.js"
+            },
+            {
                 "key": "yzys_yozo",
                 "name": "柚子影视",
                 "type": 3,
                 "api": "./yzys_bytecode.js"
             },
             {
-                "key": "yrzj_yozo",
-                "name": "*伊人追剧",
+                "key": "sssp_gjf026",
+                "name": "*速搜视频",
                 "type": 3,
-                "api": "./yrzj_bytecode.js"
+                "api": "./sssp_bytecode.js"
             },
             {
                 "key": "zjdr_yozo",
@@ -147,7 +165,7 @@
             },
             {
                 "key": "kuqimv_bytecode",
-                "name": "*酷奇MV",
+                "name": "酷奇MV",
                 "type": 3,
                 "api": "./kuqimv_bytecode.js"
             },
