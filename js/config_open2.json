@@ -46,6 +46,12 @@
                 "api": "./yqktv_bytecode.js"
             },
             {
+                "key": "tutu_yozo",
+                "name": "图图",
+                "type": 3,
+                "api": "./tutu_bytecode.js"
+            },
+            {
                 "key": "555dy_yozo",
                 "name": "555电影",
                 "type": 3,
