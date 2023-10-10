@@ -52,6 +52,12 @@
                 "api": "./tutu_bytecode.js"
             },
             {
+                "key": "jojo_yozo",
+                "name": "JOJO",
+                "type": 3,
+                "api": "./jojo_bytecode.js"
+            },
+            {
                 "key": "555dy_yozo",
                 "name": "555电影",
                 "type": 3,
