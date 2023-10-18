@@ -33,6 +33,12 @@
                 "api": "assets://js/huya_bytecode.js"
             },
             {
+                "key": "douyu",
+                "name": "斗鱼直播",
+                "type": 3,
+                "api": "assets://js/douyu_bytecode.js"
+            },
+            {
                 "key": "ytvip_okjack",
                 "name": "影探[V2]",
                 "type": 3,
