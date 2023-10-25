@@ -46,6 +46,18 @@
                 "ext": "http://ytcms.lyyytv.cn/api.php/app/"
             },
             {
+                "key": "dsxys_yozo",
+                "name": "大师兄",
+                "type": 3,
+                "api": "./dsxys_bytecode.js"
+            },
+            {
+                "key": "kkys_yozo",
+                "name": "快看",
+                "type": 3,
+                "api": "./kkys_bytecode.js"
+            },
+            {
                 "key": "yqktv_yozo",
                 "name": "一起看",
                 "type": 3,
@@ -140,12 +152,6 @@
                 "name": "厂长",
                 "type": 3,
                 "api": "./czzy_bytecode.js"
-            },
-            {
-                "key": "kkys",
-                "name": "快看",
-                "type": 3,
-                "api": "./kkys_bytecode.js"
             },
             {
                 "key": "sharenice",
