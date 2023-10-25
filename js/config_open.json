@@ -154,6 +154,12 @@
                 "api": "assets://js/sharenice_bytecode.js"
             },
             {
+                "key": "duanju5",
+                "name": "短剧网",
+                "type": 3,
+                "api": "assets://js/duanju5_bytecode.js"
+            },
+            {
                 "key": "kuwo",
                 "name": "酷短剧",
                 "type": 3,
@@ -243,38 +249,8 @@
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
                 "ext": {
-                    "url":"https://haiwaikan.com/api.php/provide/vod/",
-                    "categories":["国产剧","韩剧","纪录片","港剧","欧美剧","日剧","泰剧","台剧","新马剧","其他剧","动画电影","国产动漫","日本动漫","港台动漫","欧美动漫","韩国动漫","新马泰动漫","其他动漫","体育","冒险片","剧情片","动作片","同性片","喜剧片","奇幻片","恐怖片","悬疑片","惊悚片","歌舞片","灾难片","爱情片","犯罪片","科幻片","经典片","网络电影","战争片","欧美综艺","日本综艺","韩国综艺","国产综艺","新马泰综艺","港台综艺","其他综艺"]
-                }
-            },
-            {
-                "key": "kuaikan_t1",
-                "name": "快看[T1]",
-                "type": 3,
-                "api": "assets://js/caiji_okjack.js",
-                "ext": {
-                    "url":"https://kuaikan-api.com/api.php/provide/vod/",
-                    "categories":["纪录片","冒险片","剧情片","动作片","动画电影","同性片","喜剧片","奇幻片","恐怖片","悬疑片","惊悚片","战争片","歌舞片","灾难片","爱情片","犯罪片","科幻片","经典片","网络电影","国产剧","欧美剧","日本剧","泰剧","港台剧","新马剧","其他剧","欧美综艺","日本综艺","韩国综艺","国产综艺","港台综艺","欧美动漫","日本动漫","国产动漫","港台动漫","韩国剧"]
-                }
-            },
-            {
-                "key": "lziapi_t1",
-                "name": "量子[T1]",
-                "type": 3,
-                "api": "assets://js/caiji_okjack.js",
-                "ext": {
-                    "url":"https://cj.lziapi.com/api.php/provide/vod/",
-                    "categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","电影解说","足球","篮球","网球","斯诺克","预告片","短剧"]
-                }
-            },
-            {
-                "key": "ffzyapi_t1",
-                "name": "非凡[T1]",
-                "type": 3,
-                "api": "assets://js/caiji_okjack.js",
-                "ext": {
-                    "url":"https://cj.ffzyapi.com/api.php/provide/vod/",
-                    "categories":["动漫片","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫"]
+                    "url": "https://haiwaikan.com/api.php/provide/vod",
+                    "categories":["国产剧","韩剧","欧美剧","日剧","港剧","台剧","新马剧","泰剧","其他剧","纪录片","动画电影","国产动漫","日本动漫","欧美动漫","韩国动漫","新马泰动漫","港台动漫","其他动漫","冒险片","剧情片","动作片","喜剧片","奇幻片","恐怖片","悬疑片","惊悚片","战争片","歌舞片","灾难片","爱情片","犯罪片","科幻片","经典片","网络电影片","欧美综艺","日本综艺","韩国综艺","国产综艺","新马泰综艺","港台综艺","其他综艺"]
                 }
             },
             {
@@ -283,18 +259,48 @@
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
                 "ext": {
-                    "url":"https://bfzyapi.com/api.php/provide/vod/",
-                    "categories":["动作片","喜剧片","恐怖片","科幻片","爱情片","剧情片","战争片","纪录片","国产剧","欧美剧","香港剧","韩国剧","台湾剧","日本剧","海外剧","泰国剧","动漫片","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","大陆综艺","港台综艺","日韩综艺","欧美综艺","动画片"]
+                    "url": "https://bfzyapi.com/api.php/provide/vod/",
+                    "categories":["国产剧","韩国剧","欧美剧","日本剧","香港剧","台湾剧","海外剧","泰国剧","纪录片","动画片","动漫片","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","动作片","喜剧片","恐怖片","科幻片","爱情片","剧情片","战争片","大陆综艺","港台综艺","日韩综艺","欧美综艺"]
                 }
             },
             {
-                "key": "rise_t1",
-                "name": "飞马[T1]",
+                "key": "1080zyk_t1",
+                "name": "优质[T1]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
                 "ext": {
-                    "url":"http://rise.eu.org/api.php/provide/vod/",
-                    "categories":[]
+                    "url": "https://api.1080zyku.com/inc/apijson.php",
+                    "categories":["搞笑","音乐","影视","汽车","国产剧","韩国剧","欧美剧","日本剧","台湾剧","香港剧","泰国剧","海外剧","记录片","动画片","国产动漫","日韩动漫","欧美动漫","港台动漫","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","大陆综艺","港台综艺","日韩综艺","欧美综艺"]
+                }
+            },
+            {
+                "key": "kuaikan_t1",
+                "name": "快看[T1]",
+                "type": 3,
+                "api": "assets://js/caiji_okjack.js",
+                "ext": {
+                    "url": "https://kuaikan-api.com/api.php/provide/vod/from/kuaikan/",
+                    "categories":["国产剧","韩国剧","欧美剧","日本剧","泰剧","港台剧","新马剧","其他剧","纪录片","动画电影","日本动漫","国产动漫","欧美动漫","港台动漫","冒险片","剧情片","动作片","喜剧片","奇幻片","恐怖片","悬疑片","惊悚片","战争片","歌舞片","灾难片","爱情片","犯罪片","科幻片","经典片","网络电影","欧美综艺","日本综艺","韩国综艺","国产综艺","港台综艺"]
+                }
+            },
+            {
+                "key": "lzm3u8_t1",
+                "name": "量子[T1]",
+                "type": 3,
+                "api": "assets://js/caiji_okjack.js",
+                "ext": {
+                    "url": "https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8/",
+                    "categories":["短剧","电影解说","足球","篮球","网球","斯诺克","国产剧","韩国剧","欧美剧","日本剧","香港剧","台湾剧","海外剧","泰国剧","记录片","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","预告片","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","大陆综艺","港台综艺","日韩综艺","欧美综艺"]
+                }
+            },
+            {
+                "key": "ffm3u8_t1",
+                "name": "非凡[T1]",
+                "type": 3,
+                "api": "assets://js/caiji_okjack.js",
+                "ext": {
+                    "url": "https://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8/",
+                    "categories":["国产剧","韩国剧","欧美剧","日本剧","香港剧","台湾剧","海外剧","泰国剧","记录片","动漫片","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","大陆综艺","港台综艺","日韩综艺","欧美综艺"]
                 }
             },
             {
@@ -303,54 +309,54 @@
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
                 "ext": {
-                    "url":"https://suoniapi.com/api.php/provide/vod/from/snm3u8/",
-                    "categories":["动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","欧美剧","韩剧","日剧","港剧","台剧","海外剧","大陆综艺","国产动漫"]
+                    "url": "https://suoniapi.com/api.php/provide/vod/from/snm3u8/",
+                    "categories":["爽文短剧","足球","篮球","影视解说","国产剧","韩剧","欧美剧","日剧","港剧","台剧","泰剧","海外剧","纪录片","动画片","国产动漫","日韩动漫","欧美动漫","港台动漫","海外动漫","预告片","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","大陆综艺","日韩综艺","港台综艺","欧美综艺"]
                 }
             },
             {
-                "key": "kuaifan_t1",
-                "name": "快帆[T1]",
+                "key": "qhm3u8_t1",
+                "name": "奇虎[T1]",
                 "type": 3,
                 "api": "assets://js/caiji_okjack.js",
                 "ext": {
-                    "url":"https://api.kuaifan.tv/api.php/provide/vod/",
-                    "categories":["动作片", "喜剧片", "爱情片", "科幻片", "恐怖片", "剧情片", "战争片", "惊悚片", "家庭片", "古装片", "历史片", "悬疑片", "犯罪片", "灾难片", "记录片", "短片", "动画片", "国产剧", "香港剧", "韩国剧", "欧美剧", "台湾剧", "日本剧", "海外剧", "泰国剧", "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺", "国产动漫", "欧美动漫", "日本动漫"]
+                    "url": "https://caiji.qhzyapi.com/api.php/provide/vod/from/qhm3u8/",
+                    "categories":["体育","国产剧","韩国剧","欧美剧","日本剧","香港剧","台湾剧","泰国剧","海外剧","纪录片","动画片","国产动漫","日本动漫","欧美动漫","欧美综艺","日韩综艺","大陆综艺","港台综艺","动作片","喜剧片","爱情片","科幻片","恐怖片","战争片","剧情片"]
                 }
             },
             {
-                "key": "shijie",
-                "name": "视界[V1]",
+                "key": "siguyy",
+                "name": "思古影视[V2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://www.1080dyw.cc/api.php/v1.vod"
+                "ext": "https://siguyy.cc/api.php/app/"
             },
             {
-                "key": "sk100",
-                "name": "速看100[V2]",
+                "key": "jialiangos",
+                "name": "佳靓[V2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://sk100.tv/api.php/app/"
+                "ext": "http://api.jialiangos.com:81/api.php/app/"
             },
             {
-                "key": "youmi",
-                "name": "悠米[V2]",
+                "key": "dytt996",
+                "name": "路人甲[V2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://yumi.ghlyys.com/api.php/app/"
+                "ext": "http://dytt996.com/api.php/app/"
             },
             {
-                "key": "adys",
-                "name": "爱迪[V2]",
+                "key": "umkan",
+                "name": "UM影院[v1]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://api123.adys.app/xgapp.php/v3/"
+                "ext": "https://www.umkan.cc/mogai_api.php/v1.vod"
             },
             {
                 "key": "lggys",
                 "name": "落攻阁[V2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://www.lggys.cn/api.php/app/"
+                "ext": "https://www.lggys.com/api.php/app/"
             },
             {
                 "key": "kuin",
@@ -360,11 +366,60 @@
                 "ext": "https://www.kuin.one/api.php/app/"
             },
             {
-                "key": "dadou",
-                "name": "大豆[V2]",
+                "key": "yayayaaapp",
+                "name": "鸭鸭[v2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://www.dadou.cm/api.php/app/"
+                "ext": "https://yayayaaapp.ynf.icu/api.php/app/"
+            },
+            {
+                "key": "netflixdog",
+                "name": "奈飞狗[v2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://netflixdog.club/api.php/app/"
+            },
+            {
+                "key": "qtw",
+                "name": "毛毛[v2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://ys.qtw.asia/api.php/app/"
+            },
+            {
+                "key": "jiageys",
+                "name": "飞鸽影视[V2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://www.jiageys.top/api.php/app/"
+            },
+            {
+                "key": "yingszj",
+                "name": "鑫鑫影视[V2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://yingszj.xn--654a.cc/api.php/app/"
+            },
+            {
+                "key": "vipcms",
+                "name": "影探2[V2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://vipcms.lyyytv.cn/api.php/app/"
+            },
+            {
+                "key": "sk100",
+                "name": "速看100[V2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://sk100.tv/api.php/app/"
+            },
+            {
+                "key": "adys",
+                "name": "爱迪[V2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://api123.adys.app/xgapp.php/v3/"
             },
             {
                 "key": "555xawqxh",
@@ -381,13 +436,6 @@
                 "ext": "https://1234567.weixiaolove.cn/api.php/app/"
             },
             {
-                "key": "gymcms",
-                "name": "光影猫[V2]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://gymcms.xn--654a.cc/api.php/app/"
-            },
-            {
                 "key": "532kan",
                 "name": "532影院[V2]",
                 "type": 3,
@@ -400,20 +448,6 @@
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
                 "ext": "https://www.netfly.tv/api.php/app/"
-            },
-            {
-                "key": "kankanju",
-                "name": "看看剧[V2]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://www.kankanju.cc/api.php/app/"
-            },
-            {
-                "key": "dytt996",
-                "name": "路人甲[V2]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://dytt996.com//api.php/app/"
             },
             {
                 "key": "wxtv",
@@ -430,13 +464,6 @@
                 "ext": "https://www.ttmja.com/api.php/app/"
             },
             {
-                "key": "yayayaaapp",
-                "name": "鸭鸭[V2]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://yayayaaapp.ynf.icu/api.php/app/"
-            },
-            {
                 "key": "996w",
                 "name": "咕噜[V2]",
                 "type": 3,
@@ -444,25 +471,18 @@
                 "ext": "https://w.996w.top/api.php/app/"
             },
             {
-                "key": "yszj",
-                "name": "影视之家[V2]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://yszj.cm/xgapp.php/v2/"
-            },
-            {
                 "key": "COKEMV",
                 "name": "COKEMV[V2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://cokemv.co/xgapp.php/v1/"
+                "ext": "https://cokemv.co/xgapp.php/v2/"
             },
             {
                 "key": "miniku",
                 "name": "迷你库[V2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://www.miniku.cc/xgapp.php/v1/"
+                "ext": "http://www.miniku.cc/xgapp.php/v2/"
             },
             {
                 "key": "inmi",
@@ -472,13 +492,6 @@
                 "ext": "https://www.inmi.app/xgapp.php/v1/"
             },
             {
-                "key": "airfun",
-                "name": "空气屋[V2]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://www.airfun.fun/xgapp.php/v2/"
-            },
-            {
                 "key": "gsjtlxy",
                 "name": "泰泰[V2]",
                 "type": 3,
@@ -486,18 +499,95 @@
                 "ext": "https://www.gsjtlxy.top/xgapp.php/v3/"
             },
             {
-                "key": "yy365",
-                "name": "365影视[V2]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://guan.yy365.vip/api.php/app/"
-            },
-            {
                 "key": "HOHOTV",
-                "name": "HOHOTV[V2]",
+                "name": "吼吼[V2]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
                 "ext": "https://hoho.tv/api.php/app/"
+            },
+            {
+                "key": "dmyy4",
+                "name": "大米星球[v2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://dmyy4.vip/api.php/app/"
+            },
+            {
+                "key": "zpsps",
+                "name": "宝片[V2]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://zpsps.com/api.php/app/"
+            },
+            {
+                "key": "myd666",
+                "name": "美益达[v1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://www.myd666.tv/api.php/v1.vod"
+            },
+            {
+                "key": "30dian",
+                "name": "创艺影视[v1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://www.30dian.cn/api.php/v1.vod"
+            },
+            {
+                "key": "uk4",
+                "name": "悠米[V1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://www.uk4.cn/mogai_api.php/v1.vod"
+            },
+            {
+                "key": "7k789",
+                "name": "188影视[V1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://www.7k789.com/mogai_api.php/v1.vod"
+            },
+            {
+                "key": "emofun",
+                "name": "EMO蓝光[V1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://one3.emofun.top/mogai_api.php/v1.vod"
+            },
+            {
+                "key": "dianyi",
+                "name": "电影先生[V1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://app.dianyi.ng/api.php/v1.vod"
+            },
+            {
+                "key": "juquanweb",
+                "name": "具全[v1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://xinxing.juquanweb.top/icciu_api.php/v1.vod"
+            },
+            {
+                "key": "aucfox",
+                "name": "AucFox[v1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://www.aucfox.top/mogai_api.php/v1.vod"
+            },
+            {
+                "key": "ystv",
+                "name": "追剧影视[V1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "https://vip.ystv.lol/api.php/v1.vod"
+            },
+            {
+                "key": "shijie",
+                "name": "视界[V1]",
+                "type": 3,
+                "api": "assets://js/appysv2_okjack.js",
+                "ext": "http://www.1080dyw.cc/api.php/v1.vod"
             },
             {
                 "key": "plyy",
@@ -512,20 +602,6 @@
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
                 "ext": "https://ys.51bro.cn/mogai_api.php/v1.vod"
-            },
-            {
-                "key": "chiguafilm",
-                "name": "吃瓜[v1]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://www.chiguafilm.com/api.php/v1.vod"
-            },
-            {
-                "key": "cotv",
-                "name": "酷乐[v1]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://www.cotv.cc/api.php/v1.vod"
             },
             {
                 "key": "wkking",
@@ -549,13 +625,6 @@
                 "ext": "https://90hd.top/api.php/v1.vod"
             },
             {
-                "key": "kuloo",
-                "name": "小乐[v1]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://www.kuloo.xyz/mogai_api.php/v1.vod"
-            },
-            {
                 "key": "EZplay",
                 "name": "EZplay[v1]",
                 "type": 3,
@@ -570,13 +639,6 @@
                 "ext": "https://www.mjlnl.cn/api.php/v1.vod"
             },
             {
-                "key": "hyjy666",
-                "name": "黑影[v1]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "http://tv.hyjy666.top/api.php/v1.vod"
-            },
-            {
                 "key": "qlkjy",
                 "name": "奇乐[v1]",
                 "type": 3,
@@ -584,25 +646,11 @@
                 "ext": "http://qlkjy.cn/api.php/v1.vod"
             },
             {
-                "key": "umkan",
-                "name": "UM影院[v1]",
+                "key": "zhaifutvapp",
+                "name": "腐宅[V1]",
                 "type": 3,
                 "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://www.umkan.cc/mogai_api.php/v1.vod"
-            },
-            {
-                "key": "zgshengxin",
-                "name": "快音[v1]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://www.zgshengxin.cn/api.php/v1.vod"
-            },
-            {
-                "key": "sc1080",
-                "name": "圣城[v1]",
-                "type": 3,
-                "api": "assets://js/appysv2_okjack.js",
-                "ext": "https://sc1080.top/api.php/v1.vod"
+                "ext": "http://app.zhaifutvapp.com/ruifenglb_api.php/v1.vod"
             },
             {
                 "key": "18a_yozo",
