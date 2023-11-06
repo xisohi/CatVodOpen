@@ -52,6 +52,30 @@
                 "api": "./dsxys_bytecode.js"
             },
             {
+                "key": "mino_yozo",
+                "name": "mino",
+                "type": 3,
+                "api": "./mino_bytecode.js"
+            },
+            {
+                "key": "555dy_yozo",
+                "name": "555电影",
+                "type": 3,
+                "api": "./555dy_bytecode.js"
+            },
+            {
+                "key": "yrzj_yozo",
+                "name": "伊人追剧",
+                "type": 3,
+                "api": "./yrzj_bytecode.js"
+            },
+            {
+                "key": "bulei_star",
+                "name": "布蕾",
+                "type": 3,
+                "api": "./bulei_bytecode.js"
+            },
+            {
                 "key": "kkys_yozo",
                 "name": "快看",
                 "type": 3,
@@ -74,24 +98,6 @@
                 "name": "JOJO",
                 "type": 3,
                 "api": "./jojo_bytecode.js"
-            },
-            {
-                "key": "555dy_yozo",
-                "name": "555电影",
-                "type": 3,
-                "api": "./555dy_bytecode.js"
-            },
-            {
-                "key": "yrzj_yozo",
-                "name": "伊人追剧",
-                "type": 3,
-                "api": "./yrzj_bytecode.js"
-            },
-            {
-                "key": "bulei_star",
-                "name": "布蕾",
-                "type": 3,
-                "api": "./bulei_bytecode.js"
             },
             {
                 "key": "miku_yozo",
