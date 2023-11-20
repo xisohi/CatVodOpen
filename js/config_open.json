@@ -2,6 +2,13 @@
     "video": {
         "sites": [
             {
+                "key": "douban_yozo",
+                "name": "豆瓣",
+                "type": 3,
+                "indexs": 1,
+                "api": "assets://js/douban_bytecode.js"
+            },
+            {
                 "key": "duboku",
                 "name": "独播库[飞]",
                 "type": 3,
@@ -46,6 +53,37 @@
                 "ext": "http://ytcms.lyyytv.cn/api.php/app/"
             },
             {
+                "key": "apptov5_rejumao_yozo",
+                "name": "热剧猫[apptov5]",
+                "type": 3,
+                "api": "assets://js/apptov5_bytecode.js",
+                "ext": {
+                    "domains": [
+                        "https://app-1253196701.cos.ap-shanghai.myqcloud.com/app.txt",
+                        "https://www.daenwl.com/app.txt"
+                    ],
+                    "aesKey": "8y8sDX3ZG22yACH3ZM5KfNGieTxEMKFe",
+                    "aesIV": "WxRAbh68C8pP6SpN",
+                    "rasPublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6Ykikz4aIqkJC899VxwX\nwx27bZJGV/fDbgAHtXxZ73Mq8QWuPfeAanWDWiGPhJu5aVQndADi7B0L5RBIrirf\n6lIzA+l8Ubt6+nvPYQ9NSlRkObE4ML2Hw7ccAmcqzDD0vplJz7Y8o7qKIoyfK5NP\nXDuiv52HgbyEP6KlWCiDfMuIsAA+/3x9C/0RDRgjf3x+24EuGOD6Gnw+rVJCOb64\nW4KZ7vH/uhaQSLLnNYF9VD00c072tOeaBt2mElexJN66gcP65kmrkI5grFz2RcEg\nIEkwUcYBNiFeHUcFyQZuDj/DLqQidwMhFJfkcUuMtByR9cYl9BpqT/3NKVQ1EPrV\n7QIDAQAB\n-----END PUBLIC KEY-----",
+                    "ic": "fwEUWytkwJqHICtu/kNrXOVGQAzWUw1mGuQYdT1heOKZ6vEEI+4jf6LAHJ/f4h39ZR2WL4fccGchSoCm+pqkBRi8asSMqZzKGGfY8ejzrYHxDjiTOhs4B6p/iC8Nrj+bcCmXAjVNksfxlcjU6JlbRQ=="
+                }
+            },
+            {
+                "key": "apptov5_bulei_yozo",
+                "name": "布蕾[apptov5]",
+                "type": 3,
+                "api": "assets://js/apptov5_bytecode.js",
+                "ext": {
+                    "domains": [
+                        "https://v5-public-1251970844.cos.ap-shanghai.myqcloud.com/accredits/68.json"
+                    ],
+                    "aesKey": "xMQFiWw77QzaiBDKNWjNRAChrenE2zB2",
+                    "aesIV": "j2WbrZph6G7m2mRM",
+                    "rasPublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvBB/JjVWPpKFAWJCiQc5\neP6FrwNG8mXt/Y/yk98sigh/vNtX0sQX56eQi1YNvZ8sIiqoVWMl1/5NlANA0A/G\n/BiH5hCFYqY5L8adZIZgSd/QR8zMAyEDccVaNog6nmXQkGWjm/269Gl+gFaCOtXO\nzyEullcgevPcGHXwAGbGc1U3XaQjydC3mF290Mk4wKSjCn3sVfMSlgh8lsPhFvBo\n5MqqBWEkIz+eF+3ni2jQqHz1oy23RLPx9cV02GAHCQWFDlEZFUXvQHJU7RJP0X0z\nfpSg9bqVQ22iRvSWIE13S4SRf18eKt7S3yeH53sv/se/evXKyYE7P4wGhxhNuhOe\nXQIDAQAB\n-----END PUBLIC KEY-----\n",
+                    "ic": "fVO1y5qVGVto+xbgx3hgGlmgOBmxt1sr5g+uWbrh8ENTyZcVFduzilI0OHY/uAMcLNe4EjaSZjmsc8t2SCdcIxZ1q2i+OJHTB90YjwjG+5mLjKf8gbTBhztyxJk68atX5msA1qsFJVhxnqHCGBkViA=="
+                }
+            },
+            {
                 "key": "dsxys_yozo",
                 "name": "大师兄",
                 "type": 3,
@@ -70,7 +108,7 @@
                 "api": "assets://js/yrzj_bytecode.js"
             },
             {
-                "key": "bulei_star",
+                "key": "bulei_yozo",
                 "name": "布蕾",
                 "type": 3,
                 "api": "assets://js/bulei_bytecode.js"
@@ -234,13 +272,6 @@
                 "name": "琨娱七七",
                 "type": 3,
                 "api": "assets://js/kunyu77_bytecode.js"
-            },
-            {
-                "key": "wogg_okjack",
-                "name": "玩偶gg",
-                "type": 3,
-                "api": "assets://js/wogg_bytecode.js",
-                "ext": "阿里token"
             },
             {
                 "key": "nivod_ts99999",
@@ -681,6 +712,48 @@
                 "name": "黄色仓库",
                 "type": 3,
                 "api": "assets://js/hsck_bytecode.js"
+            },
+            {
+                "key": "wogg_okjack",
+                "name": "玩偶gg",
+                "type": 3,
+                "api": "assets://js/wogg_open.js",
+                "ext": "填你的token"
+            },
+            {
+                "key": "funletu_okjack",
+                "name": "趣盘搜(夸克)",
+                "type": 3,
+                "api": "assets://js/funletu.js",
+                "ext": "夸克cookie,可http"
+            },
+            {
+                "key": "dovx_Dimsum",
+                "name": "七夜(搜索)",
+                "type": 3,
+                "api": "assets://js/dovx_open.js",
+                "ext": "填你的token"
+            },
+            {
+                "key": "pansearch_Dimsum",
+                "name": "PanSearch(搜索)",
+                "type": 3,
+                "api": "assets://js/pansearch_open.js",
+                "ext": "填你的token"
+            },
+            {
+                "key": "pansou_Dimsum",
+                "name": "盘搜",
+                "type": 3,
+                "api": "assets://js/pansou_open.js",
+                "ext": "填你的token"
+            },
+            {
+                "key": "xiaozhitiao_Dimsum",
+                "name": "小纸条",
+                "type": 3,
+                "api": "assets://js/xiaozhitiao_open.js",
+                "ext": "填你的token"
             }
         ]
     },
