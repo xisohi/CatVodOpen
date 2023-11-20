@@ -724,7 +724,7 @@
                 "key": "funletu_okjack",
                 "name": "趣盘搜(夸克)",
                 "type": 3,
-                "api": "./funletu.js",
+                "api": "./funletu_open.js",
                 "ext": "夸克cookie,可http"
             },
             {
