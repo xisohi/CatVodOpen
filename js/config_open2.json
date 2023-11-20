@@ -722,35 +722,35 @@
             },
             {
                 "key": "funletu_okjack",
-                "name": "趣盘搜(夸克)",
+                "name": "趣盘搜(仅搜索_夸克)",
                 "type": 3,
                 "api": "./funletu_open.js",
                 "ext": "夸克cookie,可http"
             },
             {
                 "key": "dovx_Dimsum",
-                "name": "七夜(搜索)",
+                "name": "七夜(仅搜索)",
                 "type": 3,
                 "api": "./dovx_open.js",
                 "ext": "填你的token"
             },
             {
                 "key": "pansearch_Dimsum",
-                "name": "PanSearch(搜索)",
+                "name": "PanSearch(仅搜索)",
                 "type": 3,
                 "api": "./pansearch_open.js",
                 "ext": "填你的token"
             },
             {
                 "key": "pansou_Dimsum",
-                "name": "盘搜",
+                "name": "盘搜(仅搜索)",
                 "type": 3,
                 "api": "./pansou_open.js",
                 "ext": "填你的token"
             },
             {
                 "key": "xiaozhitiao_Dimsum",
-                "name": "小纸条",
+                "name": "小纸条(仅搜索)",
                 "type": 3,
                 "api": "./xiaozhitiao_open.js",
                 "ext": "填你的token"
