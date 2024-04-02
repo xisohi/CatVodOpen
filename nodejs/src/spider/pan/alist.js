@@ -1,5 +1,4 @@
-import { _ } from 'assets://js/lib/cat.js';
-import { findBestLCS } from 'assets://js/lib/similarity.js';
+import req from '../../util/req.js';
 
 const http = async function (url, options = {}) {
     if (options.method == 'POST' && options.data) {
@@ -7,7 +6,7 @@ const http = async function (url, options = {}) {
         options.headers = Object.assign({ 'content-type': 'application/json' }, options.headers);
     }
     const res = await req(url, options);
-    res.json = () => (res.content ? JSON.parse(res.content) : null);
+    res.json = () => (res.data ? res.data : null);
     res.text = () => res.content;
     return res;
 };
@@ -33,7 +32,7 @@ async function get_drives(name) {
         //获取 设置
         settings.v3 = false;
         const data = (await http.get(server + '/api/public/settings')).json().data;
-        if (_.isArray(data)) {
+        if (Array.isArray(data)) {
             settings.title = data.find((x) => x.key == 'title')?.value;
             settings.v3 = false;
             settings.version = data.find((x) => x.key == 'version')?.value;
@@ -53,13 +52,8 @@ async function get_drives(name) {
     return __drives[name];
 }
 
-let siteKey = '';
-let siteType = 0;
-
-function init(cfg) {
-    siteKey = cfg.skey;
-    siteType = cfg.stype;
-    cfg.ext.forEach(
+async function init(inReq, _outResp) {
+    inReq.server.config.alist.forEach(
         (item) =>
             (__drives[item.name] = {
                 name: item.name,
@@ -68,8 +62,8 @@ function init(cfg) {
                 showAll: item.showAll === true, //默认只显示 视频和文件夹，如果想显示全部 showAll 设置true
                 params: item.params || {},
                 _path_param: item.params
-                    ? _.sortBy(Object.keys(item.params), function (x) {
-                          return -x.length;
+                    ? Object.keys(item.params).sort(function (x, y) {
+                          return y.length - x.length;
                       })
                     : [],
                 settings: {},
@@ -133,29 +127,41 @@ function init(cfg) {
                     }
                     return sz.toFixed(2) + filesize;
                 },
-                getRemark(data) {
+                getRemark(_data) {
                     return '';
                 },
             })
     );
+    // const deviceKey = inReq.server.prefix + '/device';
+    // device = await inReq.server.db.getObjectDefault(deviceKey, {});
+    // if (!device.id) {
+    //     device = randDeviceWithId(32);
+    //     device.id = device.id.toLowerCase();
+    //     device.ua = 'Dalvik/2.1.0 (Linux; U; Android ' + device.release + '; ' + device.model + ' Build/' + device.buildId + ')';
+    //     await inReq.server.db.push(deviceKey, device);
+    // }
+    return {};
 }
 
-async function dir(dir, pg) {
+async function dir(inReq, _outResp) {
+    const dir = inReq.body.path;
+    let pg = inReq.body.page || 1;
     for (const k in __subtitle_cache) {
         delete __subtitle_cache[k];
     }
     pg = pg || 1;
     if (pg == 0) pg == 1;
     if (dir === '/' || dir === '') {
-        const result = _.map(__drives, function (d) {
+        const result = Object.keys(__drives).map(function (n) {
+            const d = __drives[n];
             return { name: d.name, path: '/' + d.name + d.startPage, type: 0, thumb: '' };
         });
-        return JSON.stringify({
+        return {
             parent: '',
             page: pg,
             pagecount: pg,
             list: result,
-        });
+        };
     }
 
     let { drives, path } = await get_drives_path(dir);
@@ -185,15 +191,16 @@ async function dir(dir, pg) {
             if (sbust.bestMatch) __subtitle_cache[item.path] = [id + sbust.bestMatch.target];
         });
     }
-    return JSON.stringify({
+    return {
         parent: id,
         page: pg,
         pagecount: pg,
         list: allList,
-    });
+    };
 }
 
-async function file(file) {
+async function file(inReq, _outResp) {
+    const file = inReq.body.path;
     let { drives, path } = await get_drives_path(file);
     const item = await drives.getFile(path);
     const subs = [];
@@ -206,7 +213,7 @@ async function file(file) {
             } catch (error) {}
         }
     }
-    if (item.provider === 'AliyundriveShare2Open' && drives.api.other) {
+    if ((item.provider === 'AliyundriveShare2Open' || item.provider == 'AliyundriveOpen') && drives.api.other) {
         const urls = ['原画', item.raw_url];
         try {
             const res = await drives.getOther('video_preview', path);
@@ -227,7 +234,7 @@ async function file(file) {
                 subt: subs,
             },
         };
-        return JSON.stringify(result);
+        return result;
     } else if (item.provider === '123Pan') {
         let url = item.raw_url;
         try {
@@ -243,7 +250,7 @@ async function file(file) {
                 subt: subs,
             },
         };
-        return JSON.stringify(result);
+        return result;
     } else {
         const result = {
             name: item.name,
@@ -255,21 +262,51 @@ async function file(file) {
                 subt: subs,
             },
         };
-        return JSON.stringify(result);
+        return result;
     }
 }
 
-function search(wd) {
-    return JSON.stringify({
-        list: [],
-    });
+async function test(inReq, outResp) {
+    try {
+        const printErr = function (json) {
+            if (json.statusCode && json.statusCode == 500) {
+                console.error(json);
+            }
+        };
+        const prefix = inReq.server.prefix;
+        const dataResult = {};
+        let resp = await inReq.server.inject().post(`${prefix}/init`);
+        dataResult.init = resp.json();
+        printErr(resp.json());
+        resp = await inReq.server.inject().post(`${prefix}/dir`).payload({
+            path: '/',
+            page: 1,
+        });
+        dataResult.dir = resp.json();
+        printErr(resp.json());
+        resp = await inReq.server.inject().post(`${prefix}/file`).payload({
+            path: '/🐉神族九帝/天翼云盘/音乐/周杰伦 - 七里香.flac',
+        });
+        dataResult.file = resp.json();
+        printErr(resp.json());
+        return dataResult;
+    } catch (err) {
+        console.error(err);
+        outResp.code(500);
+        return { err: err.message, tip: 'check debug console output' };
+    }
 }
 
-export function __jsEvalReturn() {
-    return {
-        init: init,
-        dir: dir,
-        file: file,
-        search: search,
-    };
-}
+export default {
+    meta: {
+        key: 'alist',
+        name: 'Alist',
+        type: 40,
+    },
+    api: async (fastify) => {
+        fastify.post('/init', init);
+        fastify.post('/dir', dir);
+        fastify.post('/file', file);
+        fastify.get('/test', test);
+    },
+};
