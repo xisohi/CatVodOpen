@@ -23,6 +23,10 @@ __export(index_config_exports, {
 });
 module.exports = __toCommonJS(index_config_exports);
 var index_config_default = {
+  keke: {
+    host: "https://www.kekedy.tv"
+    // 🔰可可影视 地址发布页
+  },
   saohuo: {
     host: "http://shapp.us"
     // 🔰骚火电影 网址导航发布页
@@ -69,6 +73,10 @@ var index_config_default = {
   baozimh: {
     host: "https://www.dinnerku.com"
     // 🎨包子漫画
+  },
+  manhuagui: {
+    host: "https://www.manhuagui.com"
+    // 🎨漫画柜✈️
   },
   kanqiu: {
     host: "http://www.88kanqiu.one"
@@ -420,10 +428,6 @@ var index_config_default = {
   tudou: {
     url: "https://tudou.lvdoui.top"
     // 📂土豆(仅搜索)
-  },
-  ysche: {
-    url: "https://www.weixine.link"
-    // 📂影视车
   },
   xiaoya: {
     url: "搭建属于你自己的小雅alist-tvbox，将地址填入此处，形如：http://192.168.0.222:4567/vod1/"
