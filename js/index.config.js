@@ -273,7 +273,7 @@ var index_config_default = {
     }],
     leshi_t1: [{
       name: "🥇乐视",
-      url: "https://leshizyapi.com/api.php/provide/vod/from/leshi/",
+      url: "https://leshiapi.com/api.php/provide/vod/at/json",
       categories: ["短剧", "电影解说", "国产剧", "韩国剧", "欧美剧", "日剧", "香港剧", "台湾剧", "泰国剧", "海外剧", "纪录片", "动画片", "国产动漫", "日本动漫", "欧美动漫", "海外动漫", "奇幻片", "动作片", "爱情片", "科幻片", "恐怖片", "剧情片", "战争片", "喜剧片", "犯罪片", "灾难片", "悬疑片", "其他片", "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺"],
       search: true
     }],
