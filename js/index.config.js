@@ -23,6 +23,10 @@ __export(index_config_exports, {
 });
 module.exports = __toCommonJS(index_config_exports);
 var index_config_default = {
+  ikanbot: {
+    host: "https://bio.link/ikanbot"
+    // 🔰爱看机器人(ikanbot)最新可用地址
+  },
   keke: {
     host: "https://www.kekedy.tv"
     // 🔰可可影视 地址发布页
