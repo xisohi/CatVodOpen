@@ -23,6 +23,14 @@ __export(index_config_exports, {
 });
 module.exports = __toCommonJS(index_config_exports);
 var index_config_default = {
+  ikanbot: {
+    host: "https://bio.link/ikanbot"
+    // 🔰爱看机器人(ikanbot)最新可用地址
+  },
+  keke: {
+    host: "https://www.kekedy.tv"
+    // 🔰可可影视 地址发布页
+  },
   saohuo: {
     host: "http://shapp.us"
     // 🔰骚火电影 网址导航发布页
@@ -69,6 +77,10 @@ var index_config_default = {
   baozimh: {
     host: "https://www.dinnerku.com"
     // 🎨包子漫画
+  },
+  manhuagui: {
+    host: "https://www.manhuagui.com"
+    // 🎨漫画柜✈️
   },
   kanqiu: {
     host: "http://www.88kanqiu.one"
@@ -265,7 +277,7 @@ var index_config_default = {
     }],
     leshi_t1: [{
       name: "🥇乐视",
-      url: "https://leshizyapi.com/api.php/provide/vod/from/leshi/",
+      url: "https://leshiapi.com/api.php/provide/vod/at/json",
       categories: ["短剧", "电影解说", "国产剧", "韩国剧", "欧美剧", "日剧", "香港剧", "台湾剧", "泰国剧", "海外剧", "纪录片", "动画片", "国产动漫", "日本动漫", "欧美动漫", "海外动漫", "奇幻片", "动作片", "爱情片", "科幻片", "恐怖片", "剧情片", "战争片", "喜剧片", "犯罪片", "灾难片", "悬疑片", "其他片", "大陆综艺", "港台综艺", "日韩综艺", "欧美综艺"],
       search: true
     }],
@@ -420,10 +432,6 @@ var index_config_default = {
   tudou: {
     url: "https://tudou.lvdoui.top"
     // 📂土豆(仅搜索)
-  },
-  ysche: {
-    url: "https://www.weixine.link"
-    // 📂影视车
   },
   xiaoya: {
     url: "搭建属于你自己的小雅alist-tvbox，将地址填入此处，形如：http://192.168.0.222:4567/vod1/"
